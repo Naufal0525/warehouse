@@ -1,0 +1,7 @@
+{
+    "name": "namil/rep",
+    "type": "project",
+    "require": {
+        "phpoffice/phpspreadsheet": "^3.5"
+    }
+}

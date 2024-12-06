@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Wrapper */
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar .menu {
+    flex-grow: 1;
+}
+
+.sidebar .menu .menu-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar .menu .menu-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .logout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar .logout-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the buttons */
+button {
+    cursor: pointer;
+}
+
+.logout-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #ff0000;
+}
+
+/* Main Edit Styling */
+.main-edit {
+    flex-grow: 1;
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.main-edit h2 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-edit form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-edit form label {
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.main-edit form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-edit form input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2), 0 0 8px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+.main-edit form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px #1c5f85;
+    transition: all 0.3s ease;
+}
+
+.main-edit form button:hover {
+    background: linear-gradient(to bottom, #2980b9, #1c5f85);
+    transform: translateY(-2px);
+    box-shadow: 0 7px #145374;
+}
+
+.main-edit form button:active {
+    background: #1c5f85;
+    transform: translateY(2px);
+    box-shadow: 0 3px #145374;
+}
+
+/* Animasi untuk efek fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

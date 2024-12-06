@@ -1,0 +1,117 @@
+/* Mengatur latar belakang */
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Latar belakang dengan gradasi biru */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Kontainer utama untuk judul dan form */
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Latar belakang dengan transparansi */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan 3D */
+    width: 100%; /* Menggunakan lebar 100% agar menyesuaikan dengan layar */
+    max-width: 400px; /* Maksimal lebar kontainer untuk menjaga ukuran tetap */
+    text-align: center; /* Menyusun teks dan form secara horizontal di tengah */
+    display: flex;
+    flex-direction: column; /* Menyusun elemen-elemen secara vertikal */
+    justify-content: center; /* Menyusun elemen-elemen di tengah secara vertikal */
+    align-items: center; /* Menyusun elemen-elemen di tengah secara horizontal */
+    height: auto; /* Menyesuaikan tinggi kontainer agar cukup untuk menampung form */
+}
+
+/* Pengaturan header */
+h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px; /* Menambahkan jarak bawah agar tidak terlalu rapat dengan form */
+    margin-top: 0; /* Menghilangkan jarak atas */
+}
+
+/* Gaya untuk elemen input */
+input[type="text"], input[type="password"] {
+    width: 90%; /* Membuat input memiliki lebar 90% dari container */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+/* Efek 3D ketika focus pada input */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0, 194, 255, 0.8); /* Efek glow biru */
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Mengatur gaya untuk tombol login */
+button {
+    width: 90%; /* Membuat tombol memiliki lebar 90% dari container */
+    padding: 10px;
+    background-color: #00c6ff; /* Warna tombol biru terang */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #0072ff;
+    transform: translateY(-3px); /* Efek tombol terangkat */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Menambahkan gaya untuk tombol register (hijau sejuk) */
+.register-btn {
+    background-color: #00ff90; /* Warna hijau terang */
+    width: 90%; /* Tombol register juga 90% dari container */
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Efek hover pada tombol register */
+.register-btn:hover {
+    background-color: #00c600;
+    transform: translateY(-3px); /* Efek tombol terangkat */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Menambahkan jarak antara tombol login dan register */
+ul li + li {
+    margin-top: 15px; /* Memberikan jarak antara elemen li (tombol login dan tombol register) */
+}
+
+/* Pesan error */
+p[style="color: red;"] {
+    color: red;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Pengaturan margin dan padding untuk form elemen */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
